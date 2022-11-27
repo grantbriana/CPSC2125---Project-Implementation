@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial; 
+
+}
+
+header{
+  background-color: #D2DAFC;
+}
+
+.logo{
+  align: left;
+  height: 50%;
+  width: 50%;
+}
+
+.navbar{
+  background-color: #FFEEA9;
+  font-family: Arial;
+  color: #233aa8;
+}
+
+.main1{
+  background-color: #FFEEA9;
+  font-family: Arial;
+  color: #233aa8;
+}
+
+.main2{
+  background-color: white;
+  font-family: Arial;
+  color: #233aa8;
+}
+
+footer{
+  background-color: #EEEEEE;
+  font-family: Arial; 
+  color: black;
+}
