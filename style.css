@@ -38,3 +38,16 @@ footer{
   font-family: Arial; 
   color: black;
 }
+
+@media screen and (max-width: 768px) {
+    .grid-container{
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "navbar navbar navbar"
+    "main1 main1 main1"
+    "main2 main2 main2"
+    "footer footer footer";
+  grid-gap: 10px;
+    }
+}

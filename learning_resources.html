@@ -26,7 +26,7 @@
   <div class="row">
     <div class="col">
 
-      <nav class="navbar navbar-expand-sm">
+      <nav class="navbar navbar-expand-sm" id = "navBar">
         <div class="container-fluid">
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -61,29 +61,54 @@
     <div class="col">
       <main class="main1" id="main1">
         <h3>List of Learning Resources</h3>
-        <ol>
-          <li><a href="#">website</a> - Description </li>
-          <li><a href="#">website</a> - Description </li>
-          <li><a href="#">website</a> - Description </li>
-          <li><a href="#">website</a>- Description </li>
-          <li><a href="#">website</a> - Description </li>
-        </ol>
+        <ul>
+          <li><a href = "https://www.codecademy.com/">Codecademy</a> - An online, interactive coding and software development learning platform. Offers specialized skills, coding lessons in over 12 different coding languages, certificates, and projects</li>
+          <li><a href="https://www.w3schools.com/">w3Schools</a> - Interactive Educational Resource for web development, coding languages, frameworks, and more</li>
+          <li><a href="https://www.freecodecamp.org">freeCodeCamp</a> - A completely free educational resource for individuals learning to code Offers "thousands of videos, articles, and interactive coding lessons"</li>
+          <li><a href="https://www.coursera.com">Coursera</a> - Offers world-class training and development programs developed by top universities and companies as well as Specializations, university courses, skill courses, professional certificates and projects</li>
+          <li><a href="https://www.Youtube.com">Youtube</a> - The popular video viewing platform contains thousands of informative & educational resources for virtually any coding language, technical skill, or concept</li>
+          <li><a href="https://www.techinterviewhandbook.org/coding-interview-prep">Tech Interview Handbook</a> - "Practical content that covers all phases of a technical interview, from applying for a job to passing the interviews to offer negotiation." For busy software engineers</li>
+
+
+        </ul>
       </main>
 
     </div>
 
     <div class="col">
       <main class="main2" id="main2">
-        <h3>Quiz</h3>
-        <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html">HTML</label><br>
-        
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">CSS</label><br>
-        
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">JavaScript</label>
-
+        <form>
+          <h3>Quiz</h3>
+          <p>Question 1: True or False? <br>The first programmers were women.</p>
+          <input type="radio" id="prog_women" name="prog_women" value="True">
+          <label for="prog_women">True</label><br>
+          <input type="radio" id="prog_women" name="prog_women" value="False">
+          <label for="prog_women">False</label><br>
+          <br>
+          
+          <p>Question 2: What is the most popular programming language?</p>
+          <input type="radio" id="python" name="pop_language" value="python">
+          <label for="python">Python</label><br>
+          <input type="radio" id="javascript" name="pop_language" value="javascript">
+          <label for="javascript">Javascript</label><br>
+          <input type="radio" id="c" name="pop_language" value="c">
+          <label for="c">C</label><br>
+  
+          <br>
+          <p>Question 3: What percentage of Software Developers are self-taught? </p>
+          <input type="radio" id="1%" name="self_taught" value="1%">
+          <label for="1%">1%</label><br>
+          <input type="radio" id="10%" name="self_taught" value="10%">
+          <label for="10%">10%</label><br>
+          <input type="radio" id="69%" name="self_taught" value="69%">
+          <label for="69%">69%</label>
+          <br>
+  
+          <br>
+          <button id="submit">Get Results</button>
+          <br>
+          <div id="results"></div>
+        </form>
 
 
       </main>
