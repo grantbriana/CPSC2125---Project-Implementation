@@ -44,53 +44,39 @@ function chartOnLoad(){
 }
 
 function quiz(){
-  const btn = document.querySelector('#submit');
-const output = document.querySelector('#result');
-
-const radioButtons2 = document.querySelectorAll('input[name="pop_language"]');
-
-const radioButtons1 = document.querySelectorAll('input[name="prog_women"]');
-
-const radioButtons3 = document.querySelectorAll('input[name="self_taught"]');
   
-
-
-btn.addEventListener("click", () => {
-            let answer2;
-            for (const radioButton of radioButtons2) {
-                if (radioButton.checked.value == "Javascript") {
-                    answer2 = "Correct!";
-                    break;
-                }
-              else{
-                answer2 = "Incorrect. The correct answer was: Javascript "
-              }
-
-              
-              let answer1;
-              for (const radioButton of radioButtons1) {
-                if (radioButton.checked.value == "True") {
-                    answer1 = "Correct!";
-                    break;
-                }
-              else{
-                answer1 = "Incorrect. The correct answer was: True"
-              }
-
-                
-                let answer3;
-                for (const radioButton of radioButtons3) {
-                if (radioButton.checked.value == "69%") {
-                    answer3 = "Correct!";
-                    break;
-                }
-              else{
-                answer3 = "Incorrect. The correct answer was: 69%"
-            }
-              }
+  const radioButtons2 = document.querySelectorAll('input[name="pop_language"]');
+  
+  const radioButtons1 = document.querySelectorAll('input[name="prog_women"]');
+  
+  const radioButtons3 = document.querySelectorAll('input[name="self_taught"]');
+    
+  var answer2 = "Incorrect. The correct answer was: Javascript ";
+  for (const radioButton of radioButtons2) {
+    if (radioButton.checked.value == "Javascript") {
+      answer2 = "Correct!";
+      break;
+    }
   }
-            
-
+  
+  var answer1 = "Incorrect. The correct answer was: True"
+  for (const radioButton of radioButtons1) {
+    if (radioButton.checked.value == "True") {
+      answer1 = "Correct!";
+      break;
+    }
+  }
+                
+  var answer3 = "Incorrect. The correct answer was: 69%";
+  for (const radioButton of radioButtons3) {
+    if (radioButton.checked.value == "69%") {
+      answer3 = "Correct!";
+      break;
+    }
+  }
+  document.getElementById("result1").innerHTML = answer1;
+  document.getElementById("result2").innerHTML = answer2;
+  document.getElementById("result3").innerHTML = answer3;
 }
 
-window.onload = chartOnLoad()
+window.onload = chartOnLoad();

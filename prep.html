@@ -109,30 +109,29 @@
       <main class="main2" id="main2">
         <p>Complete form to subscribe to Career Preparation Advice!</p>
 
-        <form id="form" action=" ">
+        <form id="form" action="https://webdevbasics.net/scripts/yoga.php" method = "post">
           <label for="text" class="form-label">First Name:</label>
-          <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+          <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname"  maxlength=50 tabindex="5" required>
           <br>
           <label for="text" class="form-label">Last Name:</label>
-          <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+          <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname"  maxlength=50 tabindex="6" required>
           <br>
           <label for="email" class="form-label">E-mail:</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter E-mail" name="email">
+          <input type="email" class="form-control" id="email" placeholder="Enter E-mail" name="email" required>
           <br>
           <label for="tel" class="form-label">Phone Number:</label>
-          <input type="tel" id="tel" name="tel" maxlength="12" minlength=12 placeholder="123-456-7890"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" tabindex="12"></input>
+          <input type="tel" id="tel" name="tel" maxlength="12" minlength=12 placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" tabindex="12"></input>
           <br>
 
           <p>How often would you like to receive emails?:</p>
-            <input type="radio" id="monthly" name="monthly" value="monthly">
+            <input type="radio" id="monthly" name="monthly" value="monthly" required>
             <label for="monthly">Monthly</label>
             <input type="radio" id="daily" name="daily" value="daily">
             <label for="daily">Daily</label>
             <input type="radio" id="bi-weekly" name="bi-weekly" value="bi-weekly">
             <label for="bi-weekly">Bi-weekly</label>
             <br>
-            <button type="submit" class="btn btn-primary" onClick="display()">Submit</button>
+        <input type ="submit" id="submit" name="submit" value="Submit" tabindex="13"></input>
 
         </form>
 
