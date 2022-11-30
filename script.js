@@ -44,39 +44,29 @@ function chartOnLoad(){
 }
 
 function quiz(){
-  
-  const radioButtons2 = document.querySelectorAll('input[name="pop_language"]');
-  
-  const radioButtons1 = document.querySelectorAll('input[name="prog_women"]');
-  
-  const radioButtons3 = document.querySelectorAll('input[name="self_taught"]');
-    
-  var answer2 = "Incorrect. The correct answer was: Javascript ";
-  for (const radioButton of radioButtons2) {
-    if (radioButton.checked.value == "Javascript") {
-      answer2 = "Correct!";
-      break;
-    }
+
+  var correctAnswer1 = document.getElementById("True");
+  var answer1 = "Incorrect. The correct answer was: True";
+  if(correctAnswer1.checked){
+    answer1 = "Correct!";
+  }
+
+  var correctAnswer2 = document.getElementById("javascript");
+  var answer2 = "Incorrect. The correct answer was: Javascript";
+  if(correctAnswer2.checked){
+    answer2 = "Correct!";
+  }
+          
+  var correctAnswer3 = document.getElementById("69%");
+  var answer3 = "Incorrect. The correct answer was: Javascript";
+  if (correctAnswer3.checked) {
+    answer3 = "Correct!";
   }
   
-  var answer1 = "Incorrect. The correct answer was: True"
-  for (const radioButton of radioButtons1) {
-    if (radioButton.checked.value == "True") {
-      answer1 = "Correct!";
-      break;
-    }
-  }
-                
-  var answer3 = "Incorrect. The correct answer was: 69%";
-  for (const radioButton of radioButtons3) {
-    if (radioButton.checked.value == "69%") {
-      answer3 = "Correct!";
-      break;
-    }
-  }
   document.getElementById("result1").innerHTML = answer1;
   document.getElementById("result2").innerHTML = answer2;
   document.getElementById("result3").innerHTML = answer3;
 }
 
 window.onload = chartOnLoad();
+window.onload = quiz();
