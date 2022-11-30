@@ -1,0 +1,27 @@
+
+
+@media only screen and (max-width: 600px) {
+    .grid-container{
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "navbar navbar navbar"
+    "main1 main1 main1"
+    "main2 main2 main2"
+    "footer footer footer";
+  grid-gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .grid-container{
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "navbar navbar"
+    "main1 main2"
+    "main2 main2"
+    "footer footer";
+  grid-gap: 10px;
+    }
+}

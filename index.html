@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width">
   <title>Cougar Coders</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="layout.css" rel="stylesheet" >
+  <link href="styles.css" rel="stylesheet">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
@@ -17,37 +18,40 @@
     <div class="col">
       <header id = "header">
         <img src="images/Cougar_Coders.png" alt="Cougar Coders Logo" class="logo">
-        <button type="button" onclick = "colorChange()">Click me!</button>
+        <!-- Interactive JS Changes CSS color scheme /!-->
+        <button type="button" onclick = "colorChange()" aria-pressed=true>Click me!</button>
 
       </header>
     </div>
   </div>
 
+  <!-- Collapsible Navigation Bar </!--> 
   <div class="row">
     <div class="col">
 
       <nav class="navbar navbar-expand-sm" id = "navBar">
         <div class="container-fluid">
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria- 
+          pressed=true>>
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html" aria-disabled=false>Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="prep.html">Preparation</a>
+                <a class="nav-link" href="prep.html" aria-disabled=false>Preparation</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="career_growth.html">Career Growth</a>
+                <a class="nav-link" href="career_growth.html" aria-disabled=false>Career Growth</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="top_companies.html">Top Companies</a>
+                <a class="nav-link" href="top_companies.html" aria-disabled=false>Top Companies</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="learning_resources.html">Learning Resources</a>
+                <a class="nav-link" href="learning_resources.html" aria-disabled=false>Learning Resources</a>
               </li>
             </ul>
           </div>
@@ -64,19 +68,20 @@
 
         <h3>Why Become a Software Engineer?</h3>
         <p>
-          Software Engineers are found in literally every industry from Government to Fashion. Software Engineers are in high demand, flexible, challenging, suitable for individual work & collaboration, creative outlets and are high-paying. This career choice has a significant impact on technology, communication, education, and more within our society.
+          Software Engineers are found in literally every industry from Government to Fashion. Software Engineers are in high demand, flexible, challenging, suitable for individual work & collaboration, creative outlets and are high-               paying. This career choice has a significant impact on technology, communication, education, and more within our society.
         </p>
 
         <h3>Roles & Responsibilities</h3>
 
-        <p>The role of a software engineer is "to analyze problems & design scalable solutions using software engineering principles. They are also responsible for data designing, acquiring, maintenance and security, test case designing and documentation (Forbes Advisor)."
+        <p>The role of a software engineer is "to analyze problems & design scalable solutions using software engineering principles. They are also responsible for data designing, acquiring, maintenance and security, test case designing           and documentation (Forbes Advisor)."
         </p>
+        
       </main>
 
     </div>
 
     <div class="col">
-      <main class ="main2" id = "main2" >
+      <main class ="main2" id = "main2">
 
         <h3>Types of Software Engineers</h3>
         <ul>
@@ -91,7 +96,7 @@
           <li>Data Scientist</li>
           <li>Site Reliability Engineer</li>
         </ul>
-        <p>For more information, <a href = "https://dev.to/wiseai/the-ultimate-guide-to-software-engineering-545e#front-end-engineer">click here</a></p>
+        <p>For more information, <a href = "https://dev.to/wiseai/the-ultimate-guide-to-software-engineering-545e#front-end-engineer">click here</a</p>
 
       </main>
 

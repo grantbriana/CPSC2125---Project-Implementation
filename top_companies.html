@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Cougar Coders - Career Preparation</title>
+  <title>Cougar Coders</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="layout.css" rel="stylesheet" >
+  <link href="styles.css" rel="stylesheet">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
+
 </head>
 
 <body>
 
-  <div class="row">
-    <div class="col">
+
       <header id="header">
         <img src="images/Cougar_Coders.png" alt="Cougar Coders Logo" class="logo">
-        <button type="button" onclick="colorChange()">Click me!</button>
+        <!-- Interactive JS Changes CSS color scheme /!-->
+        <button type="button" onclick = "colorChange()" aria-pressed=true>Click me!</button>
 
       </header>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col">
-
+ 
+      <!-- collapsible navbar -->
       <nav class="navbar navbar-expand-sm" id="navBar">
         <div class="container-fluid">
 
@@ -36,30 +33,27 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html" aria-disabled=false>Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="prep.html">Preparation</a>
+                <a class="nav-link" href="prep.html" aria-disabled=false>Preparation</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="career_growth.html">Career Growth</a>
+                <a class="nav-link" href="career_growth.html" aria-disabled=false>Career Growth</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="top_companies.html">Top Companies</a>
+                <a class="nav-link" href="top_companies.html" aria-disabled=false>Top Companies</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="learning_resources.html">Learning Resources</a>
+                <a class="nav-link" href="learning_resources.html" aria-disabled=false>Learning Resources</a>
               </li>
             </ul>
           </div>
 
         </div>
       </nav>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col">
+
       <main class="main1" id="main1">
         <h3>Top Companies for Software Engineers</h3>
         <p>Software Engineers are present across all industries. Here are some of the top rated companyies for Software
@@ -75,9 +69,7 @@
             Top Companies for Software Engineers</a></p>
       </main>
 
-    </div>
-
-    <div class="col">
+    <!-- Image Carousel /!-->
       <main class="main2" id="main2">
         <h3>Types of Software Engineers</h3>
         <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
@@ -111,20 +103,16 @@
 
 
       </main>
-    </div>
 
 
-  </div>
 
-  <div class="row">
-    <div class="col">
+
       <footer id="footer">
         <p>John Doe</p>
         <p>Doe_john@columbusstate.edu</p>
       </footer>
 
-    </div>
-  </div>
+
 
 </body>
 

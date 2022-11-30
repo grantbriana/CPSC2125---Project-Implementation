@@ -1,4 +1,4 @@
-
+//Color change of entire web page by retrieving element id
  function colorChange() {
   var main1Box = document.getElementById('main1');
   main1Box.style.color = 'black';
@@ -19,6 +19,8 @@
   navBar.style.backgroundColor = '#8c8c8c';
 }
 
+
+//Chart uses chart.js to return chart in canvas
 function chartOnLoad(){
   const ctx = document.getElementById('myChart');
 
@@ -43,8 +45,10 @@ function chartOnLoad(){
   });
 }
 
+//Quiz function
 function quiz(){
 
+  //checks if correct answer radio input is checked. Conditionally returns answer
   var correctAnswer1 = document.getElementById("True");
   var answer1 = "Incorrect. The correct answer was: True";
   if(correctAnswer1.checked){
@@ -58,7 +62,7 @@ function quiz(){
   }
           
   var correctAnswer3 = document.getElementById("69%");
-  var answer3 = "Incorrect. The correct answer was: Javascript";
+  var answer3 = "Incorrect. The correct answer was: 69%";
   if (correctAnswer3.checked) {
     answer3 = "Correct!";
   }
